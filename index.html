@@ -1,31 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<title>Materialize</title>
-	<!-- Materialize core css -->
-    <link href="materialize/css/materialize.css" rel="stylesheet" type="text/css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Custom fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- Custom css -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet" type="text/css">
+	<!-- Materialize core css -->
+  <link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection">
+
+  <!-- Custom fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- Custom css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<section class="container">
+	<!-- Navigation -->
+ 	<nav class="nav-wrapper">
+	 	<div class="container">	
+	 		<a href="" class="brand-logo">Logo</a>
+	 		<a href="#" class="sidenav-trigger" data-target="mobile-links">
+	 			<i class="material-icons">menu</i>
+	 		</a>
+	 		<ul class="right hide-on-med-and-down">
+	 			<li><a href="">Home</a></li>
+	 			<li><a href="">About</a></li>
+	 			<li><a href="">Contact</a></li>
+	 			<li><a href="" class="btn-floating indigo darken-4 z-depth-0">
+	 				<i class="material-icons">notifications</i>
+	 			</a></li>
+	 			<li><span class="badge white-text pink">5</span></li>
+	 		</ul>
+	 	</div>
+ 	</nav>
+
+ 	<ul class="sidenav" id="mobile-links">
+ 		<li><a href="">Home</a></li>
+	 	<li><a href="">About</a></li>
+	 	<li><a href="">Contact</a></li>
+	 	<li><a href="" class="btn-floating indigo darken-4"></a></li>
+ 	</ul>
+	
+	<section class="section container">
 		<div class="row">
-			<div class="col s7 push-s5"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
-	      	
-	      	<div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
-	     </div>
-	</section>
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Placeholder" id="surname" type="text" class="validate">
+	          <label for="surn_name">Surname</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="first_name" type="text" class="validate">
+	          <label for="first_name">First Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Placeholder" id="middle_name" type="text" class="validate">
+	          <label for="middle_name">Middle Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="last_name" type="text" class="validate">
+	          <label for="last_name">Last Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="email" type="email" class="validate">
+	          <label for="email">Email Address</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Placeholder" id="password1" type="password" class="validate">
+	          <label for="password1">Password</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="password2" type="password" class="validate">
+	          <label for="password2">Confirm Password</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+	          <label for="father_name">Father's Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="father_num" type="tel" class="validate">
+	          <label for="father_num">Father's Number</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+	          <label for="mother_name">Mother's Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="mother_num" type="tel" class="validate">
+	          <label for="mother_num">Mother's Number</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="home_address" type="text" class="validate">
+	          <label for="home_address">Home Address</label>
+	        </div>
+	      </div>
+	      <div class="row">
+		      <div class="input-field col s6">
+		        <select>
+			        <option value="" disabled selected>Choose your class</option>
+			        <option value="1">JSS 1</option>
+			        <option value="2">JSS 2</option>
+			        <option value="3">JSS 3</option>
+			        <option value="4">SSS 1</option>
+			        <option value="5">SSS 2</option>
+			        <option value="6">SSS 3</option>
+		        </select>
+	        	<label>Class</label>
+	        </div>
+	        <div class="input-field col s6">
+		        <select>
+			        <option value="" disabled selected>Choose your department</option>
+			        <option value="1">Commercial</option>
+			        <option value="2">Art</option>
+			        <option value="3">Science</option>
+		        </select>
+	        	<label>Department</label>
+	        </div>
+	      </div>
+	      <div class="row">
+		      <div class="input-field col s6">
+		        <select>
+			        <option value="" disabled selected>Choose your society</option>
+			        <option value="1">Jet</option>
+			        <option value="2">ICT</option>
+			        <option value="3">Home/Econs</option>
+			        <option value="4">Agriculture</option>
+			        <option value="5">Web Development</option>
+		        </select>
+	        	<label>Society/Club</label>
+	        </div>
+	        <div class="input-field col s6">
+		        <select>
+			        <option value="" disabled selected>Choose your house</option>
+			        <option value="1">Yellow</option>
+			        <option value="2">Pink</option>
+			        <option value="3">Blue</option>
+			        <option value="1">Green</option>
+			        <option value="2">Red</option>
+			        <option value="3">White</option>
+		        </select>
+	        	<label>House</label>
+	        </div>
+	      </div>
+	    </form>
+	  </div>
+  </section>
 
-	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
-	<!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		<!-- Plugin JavaScript 
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="materialize/js/init.js"></script>
+
+    <script>
+   		M.AutoInit();
+
+  	  $(document).ready(function(){
+    	$('.sidenav').sidenav();
+  		});
+    </script>
+
 </body>
 </html>
